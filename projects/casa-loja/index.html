@@ -1,46 +1,106 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Casa Loja — BUZEN Studio</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Casa Loja — BAUZEN Estudio</title>
 <style>
-:root{--o:#7f8b3d;--bg:#0d110b;--p:#171d13e8;--l:#ffffff18}*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:Arial,sans-serif;background:var(--bg);color:#fff;overflow:hidden}button{font:inherit}.top{position:fixed;z-index:30;top:0;left:0;right:0;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;background:#0a0d08e8;border-bottom:1px solid var(--l)}.brand{display:flex;gap:16px;align-items:center}.logo b{display:block;font-size:24px;letter-spacing:.28em}.logo small{font-size:8px;letter-spacing:.52em;color:#cdd2c4}.pill{padding:11px 22px;border-radius:999px;background:#202619;border:1px solid var(--l)}.top button{border:0;color:#fff;background:#ffffff08;border-radius:999px;padding:10px 13px}.state{display:none;position:absolute;inset:70px 0 0}.state.on{display:block}.viewer{width:100%;height:100%}.shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#050705d9 0,#05070580 24%,transparent 52%)}.card{position:absolute;z-index:6;top:32px;left:32px;width:340px;padding:24px;border-radius:22px;background:#11170ddd;border:1px solid var(--l);backdrop-filter:blur(14px)}.card h1{margin:0 0 18px;font-size:42px}.meta{display:grid;gap:11px}.meta small{display:block;color:#aeb5a5;font-size:10px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:3px}.hint{position:absolute;z-index:7;left:50%;bottom:24px;transform:translateX(-50%);padding:10px 15px;border-radius:999px;background:#0008;border:1px solid var(--l)}.arrow{position:absolute;z-index:8;top:50%;width:56px;height:56px;border:0;border-radius:50%;background:#768137dd;color:#fff;font-size:34px}.al{left:26px}.ar{right:326px}.side{position:absolute;z-index:9;top:16px;bottom:16px;right:16px;width:290px;padding:18px;border-radius:22px;background:var(--p);border:1px solid var(--l);backdrop-filter:blur(14px);overflow:auto}.side h2{font-size:14px;letter-spacing:.18em}.nav{display:grid;gap:8px}.nb{width:100%;display:flex;align-items:center;gap:10px;border:1px solid transparent;border-radius:13px;background:#ffffff08;color:#fff;padding:11px;cursor:pointer;text-align:left}.nb:hover,.nb.sel{background:linear-gradient(90deg,#839144aa,#83914422);border-color:#b8ca6655}.ico{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:#ffffff0b}.thumb{width:42px;height:42px;border-radius:9px;object-fit:cover}.layout{height:100%;display:flex;gap:14px}.lside{position:relative;right:auto;top:auto;bottom:auto;flex:0 0 290px;height:calc(100% - 28px);margin:14px 0 14px 14px}.content{position:relative;flex:1;margin:14px 14px 14px 0;border-radius:22px;overflow:hidden;border:1px solid var(--l);background:#11160e}.sub{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 17px;background:#171d13;border-bottom:1px solid var(--l)}.back{border:0;background:transparent;color:#d0d5c7;cursor:pointer}.planBox{height:calc(100% - 56px);display:grid;place-items:center;padding:20px;background:radial-gradient(circle,#27301e,#10140d 72%)}.plan{max-width:94%;max-height:88%;object-fit:contain;filter:drop-shadow(0 24px 40px #0009)}.cap{position:absolute;left:22px;bottom:20px;padding:11px 14px;border-radius:14px;background:#0d120bdc;border:1px solid var(--l)}.roomViewer{height:calc(100% - 56px)}.info{position:absolute;z-index:6;left:22px;bottom:20px;width:min(410px,calc(100% - 44px));padding:16px 18px;border-radius:17px;background:#0c100ae8;border:1px solid var(--l)}.info h3{margin:0 0 6px}.info p{margin:0;color:#c7ccbd;line-height:1.5;font-size:13px}.floorName{font-size:12px;letter-spacing:.16em;margin:2px 0 8px}.credits{margin-top:16px;font-size:10px;line-height:1.4;color:#8f9688}.pnlm-container{background:#0b0e09!important}
-@media(max-width:900px){html,body{overflow:auto}.top{height:108px;flex-wrap:wrap;gap:6px;padding:10px 13px}.pill{order:3;width:100%;text-align:center;padding:8px}.state{inset:108px 0 0;min-height:calc(100vh - 108px)}.card{left:14px;top:14px;width:calc(100% - 28px);max-height:40vh;overflow:auto;padding:18px}.card h1{font-size:32px}.side{top:auto;left:14px;right:14px;bottom:14px;width:auto;max-height:35vh}.hint{bottom:38vh;width:calc(100% - 28px);text-align:center}.arrow{display:none}.layout{display:block}.lside{position:absolute;z-index:12;left:14px;right:14px;bottom:14px;width:auto;height:auto;max-height:34vh;margin:0}.content{height:calc(100vh - 136px);margin:14px}.pillActions span{display:none}}
+:root{--olive:#818b3f;--olive2:#9aa850;--ink:#0b0f0a;--panel:rgba(12,16,10,.78);--line:rgba(255,255,255,.12);--muted:rgba(255,255,255,.68)}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--ink);color:#fff;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button{font:inherit}
+.top{position:fixed;z-index:50;left:0;right:0;top:0;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 30px;background:linear-gradient(180deg,rgba(7,10,7,.93),rgba(7,10,7,.82));border-bottom:1px solid rgba(255,255,255,.08)}
+.brand{display:flex;align-items:center;gap:20px}.menu{width:42px;height:42px;border:0;border-radius:50%;background:rgba(255,255,255,.055);color:#fff;font-size:21px;cursor:pointer}.logo b{display:block;font-size:25px;letter-spacing:.28em;line-height:1}.logo small{display:block;margin-top:7px;font-size:8px;letter-spacing:.55em;color:rgba(255,255,255,.65)}
+.actions{display:flex;gap:10px}.action{border:0;background:rgba(255,255,255,.045);color:#fff;padding:10px 14px;border-radius:999px;cursor:pointer}.action:hover{background:rgba(255,255,255,.09)}
+.state{display:none;position:absolute;inset:72px 0 0}.state.on{display:block}.panorama{position:absolute;inset:0;overflow:hidden;background:#10150f;cursor:grab;touch-action:none}.panorama.dragging{cursor:grabbing}.pan-image{position:absolute;inset:-8%;width:116%;height:116%;object-fit:cover;user-select:none;pointer-events:none;transform:translate3d(0,0,0) scale(1.08);transition:filter .3s ease;will-change:transform}.panorama:active .pan-image{transition:none}.shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(4,7,4,.82) 0,rgba(4,7,4,.42) 24%,rgba(4,7,4,0) 52%,rgba(4,7,4,.12) 75%,rgba(4,7,4,.52) 100%)}
+.project-info{position:absolute;z-index:8;top:52px;left:7.2vw;width:min(390px,35vw);padding:0;background:none;border:0;box-shadow:none}.project-info h1{margin:0 0 28px;font-size:clamp(38px,4vw,62px);font-weight:500;letter-spacing:.015em}.meta{display:grid;gap:15px}.meta small{display:block;margin-bottom:4px;font-size:11px;letter-spacing:.06em;color:rgba(255,255,255,.72)}.meta strong{font-size:15px;font-weight:600}
+.floor-rail{position:absolute;z-index:9;top:0;right:0;bottom:0;width:310px;padding:38px 28px;background:linear-gradient(180deg,rgba(28,35,20,.84),rgba(20,27,16,.76));border-left:1px solid rgba(255,255,255,.08);backdrop-filter:blur(12px)}.floor-rail h2{margin:0 0 26px;font-size:15px;letter-spacing:.16em;font-weight:600}.nav{display:grid;gap:2px}.navbtn{width:100%;min-height:60px;display:flex;align-items:center;gap:15px;padding:0 10px;border:0;border-bottom:1px solid rgba(255,255,255,.055);background:transparent;color:#fff;text-align:left;cursor:pointer}.navbtn:hover{background:rgba(255,255,255,.035)}.navbtn.sel{background:linear-gradient(90deg,rgba(129,139,63,.68),rgba(129,139,63,.12))}.ico{width:30px;height:30px;display:grid;place-items:center;color:#d8ddb9}.thumb{width:42px;height:42px;object-fit:cover;border-radius:3px;background:#283020}
+.hint{position:absolute;z-index:8;bottom:25px;left:50%;transform:translateX(-50%);font-size:13px;color:rgba(255,255,255,.82);text-shadow:0 2px 12px #000}.hint:before{content:'◉';margin-right:8px;color:#d8ddb9}
+.layout{height:100%;display:flex;background:#10150f}.left-rail{position:relative;flex:0 0 285px;padding:34px 22px 24px;background:linear-gradient(180deg,rgba(29,37,21,.92),rgba(18,24,14,.96));border-right:1px solid rgba(255,255,255,.08);overflow:auto}.floor-title{font-size:14px;letter-spacing:.11em;margin:0 0 8px}.back{border:0;background:transparent;color:rgba(255,255,255,.68);padding:0 0 20px;cursor:pointer}.back:hover{color:#fff}.left-rail .navbtn{min-height:52px}.content{position:relative;flex:1;min-width:0;overflow:hidden}.floor-view{position:absolute;inset:0;background:#e7e3dc;display:grid;place-items:center}.floor-view img{width:100%;height:100%;object-fit:cover;filter:saturate(.9)}.floor-view:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.22))}.floor-caption{position:absolute;z-index:3;left:32px;bottom:28px;color:#fff;font-size:13px;text-shadow:0 2px 10px #000}
+.room-pan{position:absolute;inset:0}.room-info{position:absolute;z-index:5;left:34px;bottom:30px;max-width:440px;text-shadow:0 2px 16px #000}.room-info h3{margin:0 0 7px;font-size:30px;font-weight:500}.room-info p{margin:0;line-height:1.5;color:rgba(255,255,255,.82)}
+@media(max-width:900px){.top{padding:0 14px;height:68px}.state{inset:68px 0 0}.logo b{font-size:20px}.actions .action span{display:none}.project-info{top:30px;left:22px;width:calc(100% - 44px);max-width:460px}.project-info h1{font-size:40px;margin-bottom:18px}.meta{gap:8px}.meta small{font-size:9px}.floor-rail{top:auto;left:0;right:0;bottom:0;width:auto;height:245px;padding:18px 18px 12px;border-left:0;border-top:1px solid rgba(255,255,255,.08);overflow:auto}.floor-rail h2{margin-bottom:8px}.hint{bottom:260px;width:100%;text-align:center}.left-rail{position:absolute;z-index:10;left:0;right:0;bottom:0;top:auto;max-height:290px;width:auto;padding:18px;background:rgba(18,24,14,.94);border-right:0;border-top:1px solid rgba(255,255,255,.08)}.content{height:100%}.room-info{bottom:310px;left:18px;right:18px}.floor-caption{bottom:310px;left:18px}}
 </style>
 </head>
 <body>
-<header class="top"><div class="brand"><button>☰</button><div class="logo"><b>BUZEN</b><small>STUDIO</small></div></div><div class="pill">studio.bausen.com/casa-loja</div><div class="pillActions"><button>♡ <span>Favoritos</span></button> <button>↗ <span>Compartir</span></button></div></header>
-<section id="hero" class="state on"><div id="hero360" class="viewer"></div><div class="shade"></div><div class="card"><h1>CASA LOJA</h1><div class="meta"><div><small>Cliente</small><b>ALFREDO LOAIZA</b></div><div><small>Ubicación</small><b>Loja, Ecuador</b></div><div><small>Área</small><b>320 m²</b></div><div><small>Año</small><b>2024</b></div><div><small>Costo estimado</small><b>$185.000 USD</b></div><div><small>Duración</small><b>8 meses</b></div><div><small>Estilo</small><b>Moderno contemporáneo</b></div></div></div><button id="l" class="arrow al">‹</button><button id="r" class="arrow ar">›</button><div class="hint">🖱 Arrastra para mirar alrededor</div><aside class="side"><h2>PLANTAS</h2><div id="floors" class="nav"></div><div class="credits">Demo visual: panoramas CC BY de ESO/NOIRLab vía Wikimedia Commons.</div></aside></section>
-<section id="floor" class="state"><div class="layout"><aside class="side lside"><div id="floorName" class="floorName"></div><button class="back" onclick="home()">← Volver a plantas</button><div id="roomsA" class="nav" style="margin-top:12px"></div></aside><main class="content"><div class="sub"><button class="back" onclick="home()">← Volver</button><b id="floorTitle"></b><span>Vista general</span></div><div class="planBox"><img id="plan" class="plan" alt="Plano 3D"><div class="cap">Selecciona un ambiente para explorar</div></div></main></div></section>
-<section id="room" class="state"><div class="layout"><aside class="side lside"><div id="roomFloorName" class="floorName"></div><button class="back" onclick="backFloor()">← Volver a la planta</button><div id="roomsB" class="nav" style="margin-top:12px"></div></aside><main class="content"><div class="sub"><button class="back" onclick="backFloor()">← Volver a planta</button><b id="roomTop"></b><span>360°</span></div><div id="room360" class="roomViewer"></div><div class="info"><h3 id="roomName"></h3><p id="roomDesc"></p></div></main></div></section>
-<script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+<header class="top">
+  <div class="brand"><button class="menu" aria-label="Menú">☰</button><div class="logo"><b>BAUZEN</b><small>ESTUDIO</small></div></div>
+  <div class="actions"><button class="action">♡ <span>Favoritos</span></button><button class="action">↗ <span>Compartir</span></button></div>
+</header>
+<section id="hero" class="state on">
+  <div id="heroPan" class="panorama"><img id="heroImg" class="pan-image" alt="Fachada Casa Loja"></div>
+  <div class="shade"></div>
+  <div class="project-info">
+    <h1>CASA LOJA</h1>
+    <div class="meta">
+      <div><small>Cliente</small><strong>ALFREDO LOAIZA</strong></div>
+      <div><small>Ubicación</small><strong>Loja, Ecuador</strong></div>
+      <div><small>Área de construcción</small><strong>320 m²</strong></div>
+      <div><small>Año del proyecto</small><strong>2024</strong></div>
+      <div><small>Costo estimado</small><strong>$185.000 USD</strong></div>
+      <div><small>Tiempo de ejecución</small><strong>8 meses</strong></div>
+      <div><small>Estilo arquitectónico</small><strong>Moderno contemporáneo</strong></div>
+    </div>
+  </div>
+  <div class="hint">Arrastra para mirar alrededor</div>
+  <aside class="floor-rail"><h2>PLANTAS</h2><div id="floors" class="nav"></div></aside>
+</section>
+<section id="floor" class="state">
+  <div class="layout">
+    <aside class="left-rail"><div id="floorName" class="floor-title"></div><button class="back" onclick="home()">← Volver a plantas</button><div id="roomsA" class="nav"></div></aside>
+    <main class="content"><div class="floor-view"><img id="plan" alt="Vista general de la planta"><div class="floor-caption">Selecciona un ambiente para explorar</div></div></main>
+  </div>
+</section>
+<section id="room" class="state">
+  <div class="layout">
+    <aside class="left-rail"><div id="roomFloorName" class="floor-title"></div><button class="back" onclick="backFloor()">← Volver a la planta</button><div id="roomsB" class="nav"></div></aside>
+    <main class="content"><div id="roomPan" class="panorama room-pan"><img id="roomImg" class="pan-image" alt="Vista del ambiente"></div><div class="shade"></div><div class="room-info"><h3 id="roomName"></h3><p id="roomDesc"></p></div></main>
+  </div>
+</section>
 <script>
-const W='https://commons.wikimedia.org/wiki/Special:Redirect/file/';
 const img={
- exterior:W+'Panoramic_view_of_Paranal_%28res-mount-sunrise-pan%29.jpg?width=1600',
- plan:W+'3d-design-floor-plan-coloured.jpg?width=1200',
- living:W+'Guesthouse_living_room_%28gh-livingroom-pan%29.jpg?width=1600',
- bedroom:W+'Cerro_Pach%C3%B3n_Dormitory_Room_360_Panorama_%28Pano360_Room_Pachon_Hotel1-CC%29.jpg?width=1600',
- office:W+'NOIRLab_HQ_Scientific_Interaction_Room_360_Panorama_%28360Pano_Meeting_room-CC%29.jpg?width=1600',
- hall:W+'AURA_Recinto_Interior_360_Degree_Panorama_%282022_04_11_Pano360_RecintoGBuldingAWorkingHall-CC%29.jpg?width=1600',
- terrace:W+'San_Diego_Panorama_DSC_2026-DSC_2032.jpg?width=1600'
+  facade:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2200&q=88',
+  plan:'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=86',
+  living:'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=88',
+  dining:'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2200&q=88',
+  kitchen:'https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=2200&q=88',
+  pool:'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=2200&q=88',
+  bedroom:'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=2200&q=88',
+  guest:'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2200&q=88',
+  studio:'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=2200&q=88',
+  balcony:'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=88',
+  rooftop:'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=88'
 };
 const data=[
-{id:'pb',name:'Planta Baja',icon:'⌂',rooms:[['sala','Sala',img.living,'Área social principal con visual abierta.'],['comedor','Comedor',img.living,'Comedor integrado a la zona social.'],['cocina','Cocina',img.hall,'Ambiente demo para visualizar la cocina en 360°.'],['patio','Patio / Piscina',img.terrace,'Zona exterior para patio y piscina.'],['huesped','Habitación huéspedes',img.bedroom,'Habitación para huéspedes.']]},
-{id:'p1',name:'Primer Piso',icon:'▤',rooms:[['master','Dormitorio principal',img.bedroom,'Dormitorio principal de la vivienda.'],['d2','Dormitorio 2',img.bedroom,'Segundo dormitorio de la planta superior.'],['d3','Dormitorio 3',img.bedroom,'Tercer dormitorio de la planta superior.'],['estudio','Estudio / Oficina',img.office,'Espacio de trabajo o estudio.'],['balcon','Balcón',img.terrace,'Vista exterior desde el balcón.']]},
-{id:'roof',name:'Terraza / Azotea',icon:'▱',rooms:[['bbq','Terraza BBQ',img.terrace,'Terraza social con zona de barbecue y descanso.']]}
+  {id:'pb',name:'Planta Baja',icon:'⌂',rooms:[
+    ['sala','Sala',img.living,'Área social principal con visual abierta hacia el exterior.'],
+    ['comedor','Comedor',img.dining,'Comedor integrado a la zona social.'],
+    ['cocina','Cocina',img.kitchen,'Cocina contemporánea con isla central.'],
+    ['patio','Patio / Piscina',img.pool,'Zona exterior con patio y piscina.'],
+    ['huesped','Habitación huéspedes',img.guest,'Habitación para huéspedes con iluminación natural.']
+  ]},
+  {id:'p1',name:'Primer Piso',icon:'▤',rooms:[
+    ['master','Dormitorio principal',img.bedroom,'Dormitorio principal con acabados contemporáneos.'],
+    ['d2','Dormitorio 2',img.guest,'Segundo dormitorio de la planta superior.'],
+    ['d3','Dormitorio 3',img.bedroom,'Tercer dormitorio de la planta superior.'],
+    ['estudio','Estudio / Oficina',img.studio,'Espacio de trabajo y estudio.'],
+    ['balcon','Balcón',img.balcony,'Balcón exterior conectado a la planta superior.']
+  ]},
+  {id:'roof',name:'Terraza / Azotea',icon:'▱',rooms:[
+    ['bbq','Terraza BBQ',img.rooftop,'Terraza social con área de barbecue y descanso.']
+  ]}
 ];
-let hf,rf,curF=null,curR=null;const $=x=>document.getElementById(x);
-function show(x){['hero','floor','room'].forEach(y=>$(y).classList.toggle('on',x===y))}
-function pano(id,url,rot=0){return pannellum.viewer(id,{type:'equirectangular',panorama:url,autoLoad:true,hfov:105,autoRotate:rot,autoRotateInactivityDelay:4500,showControls:true,showFullscreenCtrl:true,mouseZoom:true,backgroundColor:'#0b0e09'})}
-function roomBtn(r){return `<button class="nb" data-room="${r[0]}"><img class="thumb" src="${r[2]}" alt=""><span>${r[1]}</span></button>`}
-function drawFloors(){$('floors').innerHTML=`<button class="nb sel" onclick="home()"><span class="ico">⌂</span><span>Vista general</span></button>`+data.map(f=>`<button class="nb" data-floor="${f.id}"><span class="ico">${f.icon}</span><span>${f.name}</span></button>`).join('');document.querySelectorAll('[data-floor]').forEach(b=>b.onclick=()=>openFloor(b.dataset.floor))}
-function drawRooms(sel=''){let h=curF.rooms.map(roomBtn).join('');$('roomsA').innerHTML=h;$('roomsB').innerHTML=h;document.querySelectorAll('[data-room]').forEach(b=>{b.classList.toggle('sel',b.dataset.room===sel);b.onclick=()=>openRoom(b.dataset.room)})}
-function home(){curF=curR=null;show('hero')}
-function openFloor(id){curF=data.find(f=>f.id===id);$('floorName').textContent=curF.name.toUpperCase();$('roomFloorName').textContent=curF.name.toUpperCase();$('floorTitle').textContent=curF.name;$('plan').src=img.plan;drawRooms();show('floor')}
+let curF=null,curR=null;
+const $=id=>document.getElementById(id);
+function show(id){['hero','floor','room'].forEach(x=>$(x).classList.toggle('on',x===id))}
+function panSetup(el,imgEl){let x=0,y=0,startX=0,startY=0,baseX=0,baseY=0,down=false;const render=()=>imgEl.style.transform=`translate3d(${x}px,${y}px,0) scale(1.16)`;el.addEventListener('pointerdown',e=>{down=true;el.classList.add('dragging');startX=e.clientX;startY=e.clientY;baseX=x;baseY=y;el.setPointerCapture(e.pointerId)});el.addEventListener('pointermove',e=>{if(!down)return;x=Math.max(-130,Math.min(130,baseX+(e.clientX-startX)*.35));y=Math.max(-70,Math.min(70,baseY+(e.clientY-startY)*.25));render()});const up=()=>{down=false;el.classList.remove('dragging')};el.addEventListener('pointerup',up);el.addEventListener('pointercancel',up);render();return()=>{x=0;y=0;render()}}
+const resetHero=panSetup($('heroPan'),$('heroImg'));const resetRoom=panSetup($('roomPan'),$('roomImg'));
+$('heroImg').src=img.facade;
+function roomBtn(r){return `<button class="navbtn" data-room="${r[0]}"><img class="thumb" src="${r[2]}" alt=""><span>${r[1]}</span></button>`}
+function drawFloors(){$('floors').innerHTML=`<button class="navbtn sel" onclick="home()"><span class="ico">⌂</span><span>Vista general</span></button>`+data.map(f=>`<button class="navbtn" data-floor="${f.id}"><span class="ico">${f.icon}</span><span>${f.name}</span></button>`).join('');document.querySelectorAll('[data-floor]').forEach(b=>b.onclick=()=>openFloor(b.dataset.floor))}
+function drawRooms(sel=''){const h=curF.rooms.map(roomBtn).join('');$('roomsA').innerHTML=h;$('roomsB').innerHTML=h;document.querySelectorAll('[data-room]').forEach(b=>{b.classList.toggle('sel',b.dataset.room===sel);b.onclick=()=>openRoom(b.dataset.room)})}
+function home(){curF=curR=null;resetHero();show('hero');drawFloors()}
+function openFloor(id){curF=data.find(f=>f.id===id);$('floorName').textContent=curF.name.toUpperCase();$('roomFloorName').textContent=curF.name.toUpperCase();$('plan').src=img.plan;drawRooms();show('floor')}
 function backFloor(){if(curF){drawRooms();show('floor')}else home()}
-function openRoom(id){curR=curF.rooms.find(r=>r[0]===id);drawRooms(id);$('roomTop').textContent=curR[1];$('roomName').textContent=curR[1];$('roomDesc').textContent=curR[3];show('room');if(rf)rf.destroy();$('room360').innerHTML='';rf=pano('room360',curR[2])}
-window.home=home;window.backFloor=backFloor;drawFloors();hf=pano('hero360',img.exterior,-1.2);$('l').onclick=()=>hf.setYaw(hf.getYaw()-18,450);$('r').onclick=()=>hf.setYaw(hf.getYaw()+18,450);
+function openRoom(id){curR=curF.rooms.find(r=>r[0]===id);drawRooms(id);$('roomName').textContent=curR[1];$('roomDesc').textContent=curR[3];$('roomImg').src=curR[2];resetRoom();show('room')}
+window.home=home;window.backFloor=backFloor;drawFloors();
 </script>
-</body></html>
+</body>
+</html>
